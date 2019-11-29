@@ -1,0 +1,1308 @@
+<!doctype html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+
+	<title>Stack Overflow Blog - A destination for all things related to development at Stack Overflow</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v8.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="A destination for all things related to development at Stack Overflow"/>
+<link rel="canonical" href="https://stackoverflow.blog/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Stack Overflow Blog" />
+<meta property="og:description" content="A destination for all things related to development at Stack Overflow" />
+<meta property="og:url" content="https://stackoverflow.blog/" />
+<meta property="og:site_name" content="Stack Overflow Blog" />
+<meta property="og:image" content="https://149351115.v2.pressablecdn.com/wp-content/uploads/2017/02/apple-touch-icon@2.png" />
+<meta property="og:image:secure_url" content="https://149351115.v2.pressablecdn.com/wp-content/uploads/2017/02/apple-touch-icon@2.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="A destination for all things related to development at Stack Overflow" />
+<meta name="twitter:title" content="Stack Overflow Blog - A destination for all things related to development at Stack Overflow" />
+<meta name="twitter:site" content="@StackOverflow" />
+<meta name="twitter:image" content="https://149351115.v2.pressablecdn.com/wp-content/uploads/2017/02/apple-touch-icon@2.png" />
+<script type='application/ld+json'>{"@context":"https:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/stackoverflow.blog\/","name":"Stack Overflow Blog","potentialAction":{"@type":"SearchAction","target":"https:\/\/stackoverflow.blog\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/stackoverflow.blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://149351115.v2.pressablecdn.com/wp-includes/css/dist/block-library/style.min.css?ver=5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='bodhi-svgs-attachment-css'  href='https://149351115.v2.pressablecdn.com/wp-content/plugins/svg-support/css/svgs-attachment.css?ver=5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-css'  href='https://fonts.googleapis.com/css?family=Miriam+Libre%3A400%2C700&#038;ver=20171013' type='text/css' media='all' />
+<link rel='stylesheet' id='stack-css'  href='https://149351115.v2.pressablecdn.com/wp-content/themes/stackoverflow-oct-19/assets/css/stackoverflow.min.css?ver=20171013' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='https://149351115.v2.pressablecdn.com/wp-content/tablepress-combined.min.css?ver=19' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='https://149351115.v2.pressablecdn.com/wp-content/plugins/jetpack/css/jetpack.css?ver=7.9.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://149351115.v2.pressablecdn.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://149351115.v2.pressablecdn.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://149351115.v2.pressablecdn.com/wp-content/plugins/wp-hide-post/public/js/wp-hide-post-public.js?ver=2.0.10'></script>
+<link rel='https://api.w.org/' href='https://stackoverflow.blog/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://stackoverflow.blog/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://stackoverflow.blog/wp-includes/wlwmanifest.xml" /> 
+
+<style type='text/css'>img#wpstats{display:none}</style><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><link rel="icon" href="https://149351115.v2.pressablecdn.com/wp-content/uploads/2017/03/cropped-SO_Logo_glyph-use-this-one-smaller-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="https://149351115.v2.pressablecdn.com/wp-content/uploads/2017/03/cropped-SO_Logo_glyph-use-this-one-smaller-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://149351115.v2.pressablecdn.com/wp-content/uploads/2017/03/cropped-SO_Logo_glyph-use-this-one-smaller-180x180.jpg" />
+<meta name="msapplication-TileImage" content="https://149351115.v2.pressablecdn.com/wp-content/uploads/2017/03/cropped-SO_Logo_glyph-use-this-one-smaller-270x270.jpg" />
+</head>
+
+<body class="home blog">
+
+	<div id="page" class="site">
+		<a class="skip-link screen-reader-text" href="#content">Skip to content		</a>
+
+		<header id="masthead" class="site-header">
+			<div class="top-bar">
+				<div class="wrapper">
+					<div class="logo" itemscope itemtype="http://schema.org/Organization">
+						<a itemprop="url" href="https://stackoverflow.blog/">
+							<img src="https://stackoverflow.blog/wp-content/themes/stackoverflow-oct-19/assets/svg/dist/logo.svg">
+						</a>
+					</div>
+
+					<nav class="site-header__nav">
+						<a id="nav-latest" href="/" class="active">Latest</a>
+						<a href="/newsletter" >Newsletter</a>
+						<a href="/podcast" >Podcast</a>
+					</nav>
+
+					<div class="so-com">
+						<a href="https://stackoverflow.com" class="mainsite" target="_blank">stackoverflow.com</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		
+
+
+<div class="intro-header">
+	<div class="wrapper">
+		<h1>Welcome to The Blog</h1>
+		<p>Essays, opinions, and advice on the act of computer programming. Written by developers, for developers.</p>
+
+		<div class="intro-header__social">
+			<a target="_blank" href="https://twitter.com/stackoverflow">
+				<img src="https://stackoverflow.blog/wp-content/themes/stackoverflow-oct-19/assets/svg/dist/twitter.svg" width="20" alt="Icon" />Follow us on Twitter
+			</a>
+		</div>
+	</div>
+</div>
+
+<div id="content" class="site-content wrapper">
+
+<h2 class="section-title section-title--secondary section-title--orange-underline">Featured</h2>
+
+<div id="primary" class="content-area">
+	<main id="main" class="site-main">
+		<div class="featured-hero">
+			
+<article id="post-14246" class="m-post-card m-post-card--featured post-14246 post type-post status-publish format-standard has-post-thumbnail sticky hentry category-bulletin category-stackoverflow tag-bulletin tag-research tag-stackoverflow" itemscope itemtype="https://schema.org/BlogPosting">
+
+ 	<div class="columns">
+
+		 			<div class="m-post-card__image-column  column">
+
+
+				<div class="m-post-card__image" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+					<img width="1189" height="630" src="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/iStock-173798295-1189x630.jpg" class="attachment-post-card size-post-card wp-post-image" alt="" />					
+	 				<meta itemprop="url" content="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/iStock-173798295.jpg" />
+											<meta itemprop="width" content="1189" />
+						<meta itemprop="height" content="882" />
+									</div>
+
+ 			</div>
+ 		
+ 		<div class="m-post-card__content-column column">
+ 			<h2 class="m-post-card__title" itemprop="headline"><a href="https://stackoverflow.blog/2019/11/26/copying-code-from-stack-overflow-you-might-be-spreading-security-vulnerabilities/">Copying code from Stack Overflow? You might paste security vulnerabilities, too</a></h2>
+
+			<div class="m-post-card__meta"><span class="posted-on-container"><span class="author vcard" itemprop="author"><a class="url fn n" href="https://stackoverflow.blog/authors/rdonovan/"></a><span class="author-name">by <a class="url fn n" href="https://stackoverflow.blog/authors/rdonovan/">Ryan Donovan</a></span></span><span class="date"> on <time class="entry-date published updated" datetime="2019-11-26T11:02:05-05:00">November 26, 2019</time></span></span></div>
+
+			<div class="m-post-card__excerpt" itemprop="articleBody">
+				Copying code itself isn’t always a bad thing. Code reuse can promote efficiency in software development; why solve a problem that has already been solved well? But when the developers...
+							</div>
+
+			<div class="m-post-card__button"><a class="button -primary -blue" href="https://stackoverflow.blog/2019/11/26/copying-code-from-stack-overflow-you-might-be-spreading-security-vulnerabilities/">Continue reading</a></div>
+
+			<!-- Publisher info is required. This code block doesn't output anything) -->
+			<div itemprop="publisher" itemscope="itemscope" itemtype="https://schema.org/Organization">
+				<div itemprop="logo" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+					<meta itemprop="url" content="https://placekitten.com/g/100/100" />
+					<meta itemprop="width" content="100" />
+					<meta itemprop="height" content="100" />
+				</div>
+				<meta itemprop="name" content="Client Company" />
+			</div><!--/.itemprop=publisher-->
+		</div>
+
+	</div>
+
+ </article>
+
+<article id="post-14215" class="m-post-card m-post-card--featured post-14215 post type-post status-publish format-standard has-post-thumbnail sticky hentry category-announcements category-stackoverflow category-uncategorized tag-announcements tag-stack-overflow tag-stackoverflow" itemscope itemtype="https://schema.org/BlogPosting">
+
+ 	<div class="columns">
+
+		 			<div class="m-post-card__image-column  column">
+
+
+				<div class="m-post-card__image" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+					<img width="1200" height="630" src="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/Loop-Collaboration-1200x630.jpg" class="attachment-post-card size-post-card wp-post-image" alt="" />					
+	 				<meta itemprop="url" content="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/Loop-Collaboration.jpg" />
+											<meta itemprop="width" content="1333" />
+						<meta itemprop="height" content="787" />
+									</div>
+
+ 			</div>
+ 		
+ 		<div class="m-post-card__content-column column">
+ 			<h2 class="m-post-card__title" itemprop="headline"><a href="https://stackoverflow.blog/2019/11/25/introducing-the-loop-a-foundation-in-listening/">Introducing “The Loop”: A Foundation in Listening</a></h2>
+
+			<div class="m-post-card__meta"><span class="posted-on-container"><span class="author vcard" itemprop="author"><a class="url fn n" href="https://stackoverflow.blog/authors/sarajuan/"></a><span class="author-name">by <a class="url fn n" href="https://stackoverflow.blog/authors/sarajuan/">Sara Chipps and Juan Garza</a></span></span><span class="date"> on <time class="entry-date published updated" datetime="2019-11-25T12:00:00-05:00">November 25, 2019</time></span></span></div>
+
+			<div class="m-post-card__excerpt" itemprop="articleBody">
+				We want to share with you, the community, some of the reasons why we make decisions and what inputs we listen to, as well as give you a place to...
+							</div>
+
+			<div class="m-post-card__button"><a class="button -primary -blue" href="https://stackoverflow.blog/2019/11/25/introducing-the-loop-a-foundation-in-listening/">Continue reading</a></div>
+
+			<!-- Publisher info is required. This code block doesn't output anything) -->
+			<div itemprop="publisher" itemscope="itemscope" itemtype="https://schema.org/Organization">
+				<div itemprop="logo" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+					<meta itemprop="url" content="https://placekitten.com/g/100/100" />
+					<meta itemprop="width" content="100" />
+					<meta itemprop="height" content="100" />
+				</div>
+				<meta itemprop="name" content="Client Company" />
+			</div><!--/.itemprop=publisher-->
+		</div>
+
+	</div>
+
+ </article>
+
+<article id="post-14207" class="m-post-card m-post-card--featured post-14207 post type-post status-publish format-standard has-post-thumbnail sticky hentry category-bulletin category-code-for-a-living category-engineering category-for-work category-stackoverflow category-podcast tag-bulletin tag-git tag-kent-c-dodds tag-react tag-stackoverflow tag-the-stack-overflow-podcast" itemscope itemtype="https://schema.org/BlogPosting">
+
+ 	<div class="columns">
+
+		 			<div class="m-post-card__image-column  column">
+
+
+				<div class="m-post-card__image" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+					<img width="1200" height="630" src="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/stack-overflow-podcast-social-3-1200x630.png" class="attachment-post-card size-post-card wp-post-image" alt="" srcset="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/stack-overflow-podcast-social-3-1200x630.png 1200w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/stack-overflow-podcast-social-3-300x158.png 300w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/stack-overflow-podcast-social-3-768x403.png 768w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/stack-overflow-podcast-social-3-400x210.png 400w " sizes="(max-width: 1200px) 100vw, 1200px" />					
+	 				<meta itemprop="url" content="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/stack-overflow-podcast-social-3.png" />
+											<meta itemprop="width" content="3000" />
+						<meta itemprop="height" content="1575" />
+									</div>
+
+ 			</div>
+ 		
+ 		<div class="m-post-card__content-column column">
+ 			<h2 class="m-post-card__title" itemprop="headline"><a href="https://stackoverflow.blog/2019/11/19/podcast-a-few-of-our-favorite-things-about-react/">Podcast: A Few Of Our Favorite Things About React</a></h2>
+
+			<div class="m-post-card__meta"><span class="posted-on-container"><span class="author vcard" itemprop="author"><a class="url fn n" href="https://stackoverflow.blog/authors/benpopper/"></a><span class="author-name">by <a class="url fn n" href="https://stackoverflow.blog/authors/benpopper/">Ben Popper</a></span></span><span class="date"> on <time class="entry-date published updated" datetime="2019-11-19T00:30:08-05:00">November 19, 2019</time></span></span></div>
+
+			<div class="m-post-card__excerpt" itemprop="articleBody">
+				What was life like before Git? Why do some many folks love React? How do you transition from a coder to a manager?
+							</div>
+
+			<div class="m-post-card__button"><a class="button -primary -blue" href="https://stackoverflow.blog/2019/11/19/podcast-a-few-of-our-favorite-things-about-react/">Continue reading</a></div>
+
+			<!-- Publisher info is required. This code block doesn't output anything) -->
+			<div itemprop="publisher" itemscope="itemscope" itemtype="https://schema.org/Organization">
+				<div itemprop="logo" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+					<meta itemprop="url" content="https://placekitten.com/g/100/100" />
+					<meta itemprop="width" content="100" />
+					<meta itemprop="height" content="100" />
+				</div>
+				<meta itemprop="name" content="Client Company" />
+			</div><!--/.itemprop=publisher-->
+		</div>
+
+	</div>
+
+ </article>
+
+<article id="post-14204" class="m-post-card m-post-card--featured post-14204 post type-post status-publish format-standard has-post-thumbnail sticky hentry category-bulletin category-code-for-a-living category-stackoverflow tag-bulletin tag-journalism tag-stackoverflow" itemscope itemtype="https://schema.org/BlogPosting">
+
+ 	<div class="columns">
+
+		 			<div class="m-post-card__image-column  column">
+
+
+				<div class="m-post-card__image" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+					<img width="1200" height="630" src="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/iStock-962721460-1-1200x630.jpg" class="attachment-post-card size-post-card wp-post-image" alt="" />					
+	 				<meta itemprop="url" content="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/iStock-962721460-1.jpg" />
+											<meta itemprop="width" content="2121" />
+						<meta itemprop="height" content="1414" />
+									</div>
+
+ 			</div>
+ 		
+ 		<div class="m-post-card__content-column column">
+ 			<h2 class="m-post-card__title" itemprop="headline"><a href="https://stackoverflow.blog/2019/11/18/the-interactive-news-platform-for-everyone/">The Interactive News Platform for Everyone</a></h2>
+
+			<div class="m-post-card__meta"><span class="posted-on-container"><span class="author vcard" itemprop="author"><a class="url fn n" href="https://stackoverflow.blog/authors/rdonovan/"></a><span class="author-name">by <a class="url fn n" href="https://stackoverflow.blog/authors/rdonovan/">Ryan Donovan</a></span></span><span class="date"> on <time class="entry-date published updated" datetime="2019-11-18T11:05:08-05:00">November 18, 2019</time></span></span></div>
+
+			<div class="m-post-card__excerpt" itemprop="articleBody">
+				Journalists have an uneasy relationship with technology. On one hand, journalism at the highest levels still focuses on print distribution, a technology hundreds of years old. On the other hand,...
+							</div>
+
+			<div class="m-post-card__button"><a class="button -primary -blue" href="https://stackoverflow.blog/2019/11/18/the-interactive-news-platform-for-everyone/">Continue reading</a></div>
+
+			<!-- Publisher info is required. This code block doesn't output anything) -->
+			<div itemprop="publisher" itemscope="itemscope" itemtype="https://schema.org/Organization">
+				<div itemprop="logo" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+					<meta itemprop="url" content="https://placekitten.com/g/100/100" />
+					<meta itemprop="width" content="100" />
+					<meta itemprop="height" content="100" />
+				</div>
+				<meta itemprop="name" content="Client Company" />
+			</div><!--/.itemprop=publisher-->
+		</div>
+
+	</div>
+
+ </article>
+
+<article id="post-14185" class="m-post-card m-post-card--featured post-14185 post type-post status-publish format-standard has-post-thumbnail sticky hentry category-bulletin category-stackoverflow tag-bulletin tag-python tag-stackoverflow" itemscope itemtype="https://schema.org/BlogPosting">
+
+ 	<div class="columns">
+
+		 			<div class="m-post-card__image-column  column">
+
+
+				<div class="m-post-card__image" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+					<img width="1200" height="630" src="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/The-Great-Python-3-Migration-1.png" class="attachment-post-card size-post-card wp-post-image" alt="" srcset="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/The-Great-Python-3-Migration-1.png 1201w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/The-Great-Python-3-Migration-1-300x158.png 300w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/The-Great-Python-3-Migration-1-768x404.png 768w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/The-Great-Python-3-Migration-1-400x210.png 400w " sizes="(max-width: 1200px) 100vw, 1200px" />					
+	 				<meta itemprop="url" content="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/The-Great-Python-3-Migration-1.png" />
+											<meta itemprop="width" content="1201" />
+						<meta itemprop="height" content="631" />
+									</div>
+
+ 			</div>
+ 		
+ 		<div class="m-post-card__content-column column">
+ 			<h2 class="m-post-card__title" itemprop="headline"><a href="https://stackoverflow.blog/2019/11/14/why-is-the-migration-to-python-3-taking-so-long/">Why is the Migration to Python 3 Taking So Long?</a></h2>
+
+			<div class="m-post-card__meta"><span class="posted-on-container"><span class="author vcard" itemprop="author"><a class="url fn n" href="https://stackoverflow.blog/authors/vboykis/"></a><span class="author-name">by <a class="url fn n" href="https://stackoverflow.blog/authors/vboykis/">Vicki Boykis</a></span></span><span class="date"> on <time class="entry-date published updated" datetime="2019-11-14T10:00:00-05:00">November 14, 2019</time></span></span></div>
+
+			<div class="m-post-card__excerpt" itemprop="articleBody">
+				For some companies who have already made the change years ago, it won’t be an issue. However, there’s a whole range of companies who won’t be making the change anytime...
+							</div>
+
+			<div class="m-post-card__button"><a class="button -primary -blue" href="https://stackoverflow.blog/2019/11/14/why-is-the-migration-to-python-3-taking-so-long/">Continue reading</a></div>
+
+			<!-- Publisher info is required. This code block doesn't output anything) -->
+			<div itemprop="publisher" itemscope="itemscope" itemtype="https://schema.org/Organization">
+				<div itemprop="logo" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+					<meta itemprop="url" content="https://placekitten.com/g/100/100" />
+					<meta itemprop="width" content="100" />
+					<meta itemprop="height" content="100" />
+				</div>
+				<meta itemprop="name" content="Client Company" />
+			</div><!--/.itemprop=publisher-->
+		</div>
+
+	</div>
+
+ </article>
+
+<article id="post-14164" class="m-post-card m-post-card--featured post-14164 post type-post status-publish format-standard has-post-thumbnail sticky hentry category-announcements category-stackoverflow tag-announcements tag-stackoverflow" itemscope itemtype="https://schema.org/BlogPosting">
+
+ 	<div class="columns">
+
+		 			<div class="m-post-card__image-column  column">
+
+
+				<div class="m-post-card__image" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+					<img width="1200" height="630" src="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/Blog-and-SocialSE.png" class="attachment-post-card size-post-card wp-post-image" alt="" srcset="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/Blog-and-SocialSE.png 1200w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/Blog-and-SocialSE-300x158.png 300w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/Blog-and-SocialSE-768x403.png 768w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/Blog-and-SocialSE-400x210.png 400w " sizes="(max-width: 1200px) 100vw, 1200px" />					
+	 				<meta itemprop="url" content="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/Blog-and-SocialSE.png" />
+											<meta itemprop="width" content="1200" />
+						<meta itemprop="height" content="630" />
+									</div>
+
+ 			</div>
+ 		
+ 		<div class="m-post-card__content-column column">
+ 			<h2 class="m-post-card__title" itemprop="headline"><a href="https://stackoverflow.blog/2019/11/13/were-rewarding-the-question-askers/">We&#8217;re Rewarding the Question Askers</a></h2>
+
+			<div class="m-post-card__meta"><span class="posted-on-container"><span class="author vcard" itemprop="author"><a class="url fn n" href="https://stackoverflow.blog/authors/schipps/"></a><span class="author-name">by <a class="url fn n" href="https://stackoverflow.blog/authors/schipps/">Sara Chipps</a></span></span><span class="date"> on <time class="entry-date published updated" datetime="2019-11-13T13:00:00-05:00">November 13, 2019</time></span></span></div>
+
+			<div class="m-post-card__excerpt" itemprop="articleBody">
+				We’re recalculating reputation for every Stack Overflow and Stack Exchange individual based on this change. Every question upvote earned in the past will earn a value of ten reputation points...
+							</div>
+
+			<div class="m-post-card__button"><a class="button -primary -blue" href="https://stackoverflow.blog/2019/11/13/were-rewarding-the-question-askers/">Continue reading</a></div>
+
+			<!-- Publisher info is required. This code block doesn't output anything) -->
+			<div itemprop="publisher" itemscope="itemscope" itemtype="https://schema.org/Organization">
+				<div itemprop="logo" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+					<meta itemprop="url" content="https://placekitten.com/g/100/100" />
+					<meta itemprop="width" content="100" />
+					<meta itemprop="height" content="100" />
+				</div>
+				<meta itemprop="name" content="Client Company" />
+			</div><!--/.itemprop=publisher-->
+		</div>
+
+	</div>
+
+ </article>
+
+<article id="post-14151" class="m-post-card m-post-card--featured post-14151 post type-post status-publish format-standard has-post-thumbnail sticky hentry category-bulletin category-community category-insights category-stackoverflow tag-bulletin tag-community tag-insights tag-stackoverflow" itemscope itemtype="https://schema.org/BlogPosting">
+
+ 	<div class="columns">
+
+		 			<div class="m-post-card__image-column  column">
+
+
+				<div class="m-post-card__image" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+					<img width="630" height="450" src="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/08/MonthlyResearchPlan-630x450.png" class="attachment-post-card size-post-card wp-post-image" alt="" />					
+	 				<meta itemprop="url" content="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/08/MonthlyResearchPlan.png" />
+											<meta itemprop="width" content="1420" />
+						<meta itemprop="height" content="920" />
+									</div>
+
+ 			</div>
+ 		
+ 		<div class="m-post-card__content-column column">
+ 			<h2 class="m-post-card__title" itemprop="headline"><a href="https://stackoverflow.blog/2019/11/12/research-update-a-b-testing-the-new-question-form/">Research Update: A/B Testing the New Question Form</a></h2>
+
+			<div class="m-post-card__meta"><span class="posted-on-container"><span class="author vcard" itemprop="author"><a class="url fn n" href="https://stackoverflow.blog/authors/juliasilge/"></a><span class="author-name">by <a class="url fn n" href="https://stackoverflow.blog/authors/juliasilge/">Julia Silge</a></span></span><span class="date"> on <time class="entry-date published updated" datetime="2019-11-12T13:00:45-05:00">November 12, 2019</time></span></span></div>
+
+			<div class="m-post-card__excerpt" itemprop="articleBody">
+				This month’s research update shows how the new question asking experience on Stack Overflow, now live for everyone, helps askers be more successful with quality questions.
+							</div>
+
+			<div class="m-post-card__button"><a class="button -primary -blue" href="https://stackoverflow.blog/2019/11/12/research-update-a-b-testing-the-new-question-form/">Continue reading</a></div>
+
+			<!-- Publisher info is required. This code block doesn't output anything) -->
+			<div itemprop="publisher" itemscope="itemscope" itemtype="https://schema.org/Organization">
+				<div itemprop="logo" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+					<meta itemprop="url" content="https://placekitten.com/g/100/100" />
+					<meta itemprop="width" content="100" />
+					<meta itemprop="height" content="100" />
+				</div>
+				<meta itemprop="name" content="Client Company" />
+			</div><!--/.itemprop=publisher-->
+		</div>
+
+	</div>
+
+ </article>
+
+<article id="post-14158" class="m-post-card m-post-card--featured post-14158 post type-post status-publish format-standard has-post-thumbnail sticky hentry category-bulletin category-code-for-a-living category-stackoverflow category-podcast tag-bulletin tag-d3-js tag-dev-to tag-jess-lee tag-jupyter-notebooks tag-stack-overflow tag-the-stack-overflow-podcast" itemscope itemtype="https://schema.org/BlogPosting">
+
+ 	<div class="columns">
+
+		 			<div class="m-post-card__image-column  column">
+
+
+				<div class="m-post-card__image" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+					<img width="1200" height="630" src="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/stack-overflow-podcast-social-3-1200x630.png" class="attachment-post-card size-post-card wp-post-image" alt="" srcset="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/stack-overflow-podcast-social-3-1200x630.png 1200w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/stack-overflow-podcast-social-3-300x158.png 300w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/stack-overflow-podcast-social-3-768x403.png 768w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/stack-overflow-podcast-social-3-400x210.png 400w " sizes="(max-width: 1200px) 100vw, 1200px" />					
+	 				<meta itemprop="url" content="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/stack-overflow-podcast-social-3.png" />
+											<meta itemprop="width" content="3000" />
+						<meta itemprop="height" content="1575" />
+									</div>
+
+ 			</div>
+ 		
+ 		<div class="m-post-card__content-column column">
+ 			<h2 class="m-post-card__title" itemprop="headline"><a href="https://stackoverflow.blog/2019/11/12/stack-overflow-podcast-127-you-graduated-from-coding-bootcamp-now-what/">You graduated from coding bootcamp. Now what?</a></h2>
+
+			<div class="m-post-card__meta"><span class="posted-on-container"><span class="author vcard" itemprop="author"><a class="url fn n" href="https://stackoverflow.blog/authors/benpopper/"></a><span class="author-name">by <a class="url fn n" href="https://stackoverflow.blog/authors/benpopper/">Ben Popper</a></span></span><span class="date"> on <time class="entry-date published updated" datetime="2019-11-12T00:35:39-05:00">November 12, 2019</time></span></span></div>
+
+			<div class="m-post-card__excerpt" itemprop="articleBody">
+				This week on the podcast, we chat with Jess Lee, co-founder of Dev.to, and learn about Jupyter notebooks and the joys of d3.js.
+							</div>
+
+			<div class="m-post-card__button"><a class="button -primary -blue" href="https://stackoverflow.blog/2019/11/12/stack-overflow-podcast-127-you-graduated-from-coding-bootcamp-now-what/">Continue reading</a></div>
+
+			<!-- Publisher info is required. This code block doesn't output anything) -->
+			<div itemprop="publisher" itemscope="itemscope" itemtype="https://schema.org/Organization">
+				<div itemprop="logo" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+					<meta itemprop="url" content="https://placekitten.com/g/100/100" />
+					<meta itemprop="width" content="100" />
+					<meta itemprop="height" content="100" />
+				</div>
+				<meta itemprop="name" content="Client Company" />
+			</div><!--/.itemprop=publisher-->
+		</div>
+
+	</div>
+
+ </article>
+
+<article id="post-14105" class="m-post-card m-post-card--featured post-14105 post type-post status-publish format-standard has-post-thumbnail sticky hentry category-announcements category-bulletin tag-github tag-stack-overflow" itemscope itemtype="https://schema.org/BlogPosting">
+
+ 	<div class="columns">
+
+		 			<div class="m-post-card__image-column  column">
+
+
+				<div class="m-post-card__image" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+					<img width="1200" height="630" src="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/so-blog-github-login2-1.png" class="attachment-post-card size-post-card wp-post-image" alt="" srcset="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/so-blog-github-login2-1.png 1200w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/so-blog-github-login2-1-300x158.png 300w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/so-blog-github-login2-1-768x403.png 768w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/so-blog-github-login2-1-400x210.png 400w " sizes="(max-width: 1200px) 100vw, 1200px" />					
+	 				<meta itemprop="url" content="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/so-blog-github-login2-1.png" />
+											<meta itemprop="width" content="1200" />
+						<meta itemprop="height" content="630" />
+									</div>
+
+ 			</div>
+ 		
+ 		<div class="m-post-card__content-column column">
+ 			<h2 class="m-post-card__title" itemprop="headline"><a href="https://stackoverflow.blog/2019/11/11/announcing-support-for-github-authentication-in-stack-overflow/">Announcing: Support for GitHub Authentication in Stack Overflow</a></h2>
+
+			<div class="m-post-card__meta"><span class="posted-on-container"><span class="author vcard" itemprop="author"><a class="url fn n" href="https://stackoverflow.blog/authors/gdalgas/"></a><span class="author-name">by <a class="url fn n" href="https://stackoverflow.blog/authors/gdalgas/">Geoff Dalgas</a></span></span><span class="date"> on <time class="entry-date published updated" datetime="2019-11-11T10:03:04-05:00">November 11, 2019</time></span></span></div>
+
+			<div class="m-post-card__excerpt" itemprop="articleBody">
+				We are always looking for ways to make it easier to be a part of the Stack Overflow community. One of the ways we make things easy is by offering...
+							</div>
+
+			<div class="m-post-card__button"><a class="button -primary -blue" href="https://stackoverflow.blog/2019/11/11/announcing-support-for-github-authentication-in-stack-overflow/">Continue reading</a></div>
+
+			<!-- Publisher info is required. This code block doesn't output anything) -->
+			<div itemprop="publisher" itemscope="itemscope" itemtype="https://schema.org/Organization">
+				<div itemprop="logo" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+					<meta itemprop="url" content="https://placekitten.com/g/100/100" />
+					<meta itemprop="width" content="100" />
+					<meta itemprop="height" content="100" />
+				</div>
+				<meta itemprop="name" content="Client Company" />
+			</div><!--/.itemprop=publisher-->
+		</div>
+
+	</div>
+
+ </article>
+
+		</div>
+
+		<div class="columns">
+		<div class="column is-two-thirds">
+
+
+				
+<article id="post-14233" class="m-post-card post-14233 post type-post status-publish format-standard has-post-thumbnail hentry category-bulletin category-code-for-a-living category-engineering category-stackoverflow category-podcast tag-bulletin tag-stack-overflow tag-the-stack-overflow-podcast" itemscope itemtype="https://schema.org/BlogPosting">
+
+ 	<div class="columns">
+
+		 			<div class="m-post-card__image-column  column">
+
+
+				<div class="m-post-card__image" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+					<img width="1200" height="630" src="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/stack-overflow-podcast-social-3-1200x630.png" class="attachment-post-card size-post-card wp-post-image" alt="" srcset="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/stack-overflow-podcast-social-3-1200x630.png 1200w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/stack-overflow-podcast-social-3-300x158.png 300w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/stack-overflow-podcast-social-3-768x403.png 768w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/stack-overflow-podcast-social-3-400x210.png 400w " sizes="(max-width: 1200px) 100vw, 1200px" />					
+	 				<meta itemprop="url" content="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/stack-overflow-podcast-social-3.png" />
+											<meta itemprop="width" content="3000" />
+						<meta itemprop="height" content="1575" />
+									</div>
+
+ 			</div>
+ 		
+ 		<div class="m-post-card__content-column column">
+ 			<h2 class="m-post-card__title" itemprop="headline"><a href="https://stackoverflow.blog/2019/11/25/podcast-tfw-you-accidentally-delete-your-database/">Podcast: TFW You Accidentally Delete Your  Database</a></h2>
+
+			<div class="m-post-card__meta"><span class="posted-on-container"><span class="author vcard" itemprop="author"><a class="url fn n" href="https://stackoverflow.blog/authors/benpopper/"></a><span class="author-name">by <a class="url fn n" href="https://stackoverflow.blog/authors/benpopper/">Ben Popper</a></span></span><span class="date"> on <time class="entry-date published updated" datetime="2019-11-25T14:59:34-05:00">November 25, 2019</time></span></span></div>
+
+			<div class="m-post-card__excerpt" itemprop="articleBody">
+				We chat with two of the most creative and connected developers in New York about what they&#039;re building and how they learn.
+							</div>
+
+			<div class="m-post-card__button"><a class="button -primary -blue" href="https://stackoverflow.blog/2019/11/25/podcast-tfw-you-accidentally-delete-your-database/">Continue reading</a></div>
+
+			<!-- Publisher info is required. This code block doesn't output anything) -->
+			<div itemprop="publisher" itemscope="itemscope" itemtype="https://schema.org/Organization">
+				<div itemprop="logo" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+					<meta itemprop="url" content="https://placekitten.com/g/100/100" />
+					<meta itemprop="width" content="100" />
+					<meta itemprop="height" content="100" />
+				</div>
+				<meta itemprop="name" content="Client Company" />
+			</div><!--/.itemprop=publisher-->
+		</div>
+
+	</div>
+
+ </article>
+
+<article id="post-14199" class="m-post-card post-14199 post type-post status-publish format-standard has-post-thumbnail hentry category-newsletter" itemscope itemtype="https://schema.org/BlogPosting">
+
+ 	<div class="columns">
+
+		 			<div class="m-post-card__image-column  column">
+
+
+				<div class="m-post-card__image" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+					<img width="630" height="450" src="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/09/The-Overflow-Blog-630x450.png" class="attachment-post-card size-post-card wp-post-image" alt="" srcset="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/09/The-Overflow-Blog-630x450.png 630w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/09/The-Overflow-Blog-300x214.png 300w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/09/The-Overflow-Blog-316x225.png 316w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/09/The-Overflow-Blog.png 631w " sizes="(max-width: 630px) 100vw, 630px" />					
+	 				<meta itemprop="url" content="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/09/The-Overflow-Blog.png" />
+											<meta itemprop="width" content="631" />
+						<meta itemprop="height" content="450" />
+									</div>
+
+ 			</div>
+ 		
+ 		<div class="m-post-card__content-column column">
+ 			<h2 class="m-post-card__title" itemprop="headline"><a href="https://stackoverflow.blog/2019/11/15/the-overflow-4-css-and-lace/">The Overflow #4: CSS and Lace</a></h2>
+
+			<div class="m-post-card__meta"><span class="posted-on-container"><span class="author vcard" itemprop="author"><a class="url fn n" href="https://stackoverflow.blog/authors/rdonovan/"></a><span class="author-name">by <a class="url fn n" href="https://stackoverflow.blog/authors/rdonovan/">Ryan Donovan</a></span></span><span class="date"> on <time class="entry-date published updated" datetime="2019-11-15T11:29:49-05:00">November 15, 2019</time></span></span></div>
+
+			<div class="m-post-card__excerpt" itemprop="articleBody">
+				Welcome to ISSUE #4 of The Overflow, a newsletter by developers, for developers, written and curated by the Stack Overflow team and Cassidy Williams of React Training. You can read...
+							</div>
+
+			<div class="m-post-card__button"><a class="button -primary -blue" href="https://stackoverflow.blog/2019/11/15/the-overflow-4-css-and-lace/">Continue reading</a></div>
+
+			<!-- Publisher info is required. This code block doesn't output anything) -->
+			<div itemprop="publisher" itemscope="itemscope" itemtype="https://schema.org/Organization">
+				<div itemprop="logo" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+					<meta itemprop="url" content="https://placekitten.com/g/100/100" />
+					<meta itemprop="width" content="100" />
+					<meta itemprop="height" content="100" />
+				</div>
+				<meta itemprop="name" content="Client Company" />
+			</div><!--/.itemprop=publisher-->
+		</div>
+
+	</div>
+
+ </article>
+
+<article id="post-14135" class="m-post-card post-14135 post type-post status-publish format-standard has-post-thumbnail hentry category-bulletin category-code-for-a-living category-stackoverflow tag-bulletin tag-javascript tag-linguistics tag-quantum-supremacy tag-stack-overflow" itemscope itemtype="https://schema.org/BlogPosting">
+
+ 	<div class="columns">
+
+		 			<div class="m-post-card__image-column  column">
+
+
+				<div class="m-post-card__image" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+					<img width="1200" height="630" src="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/Do-Your-Worst.png" class="attachment-post-card size-post-card wp-post-image" alt="" srcset="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/Do-Your-Worst.png 1200w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/Do-Your-Worst-300x158.png 300w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/Do-Your-Worst-768x403.png 768w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/Do-Your-Worst-400x210.png 400w " sizes="(max-width: 1200px) 100vw, 1200px" />					
+	 				<meta itemprop="url" content="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/Do-Your-Worst.png" />
+											<meta itemprop="width" content="1200" />
+						<meta itemprop="height" content="630" />
+									</div>
+
+ 			</div>
+ 		
+ 		<div class="m-post-card__content-column column">
+ 			<h2 class="m-post-card__title" itemprop="headline"><a href="https://stackoverflow.blog/2019/11/08/ben-popper-is-the-worst-coder-in-the-world-quantum-edition/">Ben Popper is the Worst Coder In The World: Quantum Edition</a></h2>
+
+			<div class="m-post-card__meta"><span class="posted-on-container"><span class="author vcard" itemprop="author"><a class="url fn n" href="https://stackoverflow.blog/authors/benpopper/"></a><span class="author-name">by <a class="url fn n" href="https://stackoverflow.blog/authors/benpopper/">Ben Popper</a></span></span><span class="date"> on <time class="entry-date published updated" datetime="2019-11-08T09:58:10-05:00">November 8, 2019</time></span></span></div>
+
+			<div class="m-post-card__excerpt" itemprop="articleBody">
+				It feels like programming would be a lot less intimidating if the vocabulary used to describe operators was closer to what the average person learned in school. Learning to concatenate...
+							</div>
+
+			<div class="m-post-card__button"><a class="button -primary -blue" href="https://stackoverflow.blog/2019/11/08/ben-popper-is-the-worst-coder-in-the-world-quantum-edition/">Continue reading</a></div>
+
+			<!-- Publisher info is required. This code block doesn't output anything) -->
+			<div itemprop="publisher" itemscope="itemscope" itemtype="https://schema.org/Organization">
+				<div itemprop="logo" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+					<meta itemprop="url" content="https://placekitten.com/g/100/100" />
+					<meta itemprop="width" content="100" />
+					<meta itemprop="height" content="100" />
+				</div>
+				<meta itemprop="name" content="Client Company" />
+			</div><!--/.itemprop=publisher-->
+		</div>
+
+	</div>
+
+ </article>
+			</div>
+		</div>
+
+
+				<!-- 3x Pop Articles component -->
+				<div class="three-x-post-block">
+					
+<style>
+		.related-articles .has-post-thumbnail img.wp-post-image { display: block !important; }          
+</style>
+
+	<h2 class="section-title section-title--secondary section-title--orange-underline">Popular</h2>
+
+<div class="columns is-mobile mobile-swipe related-articles">
+
+	
+		<div class="column is-three-quarters-mobile mobile-swipe">
+			
+<article id="post-14117" class="m-post-card m-post-card--portrait post-14117 post type-post status-publish format-standard has-post-thumbnail hentry category-bulletin category-code-for-a-living category-stackoverflow tag-bulletin tag-research tag-stackoverflow" itemscope itemtype="https://schema.org/BlogPosting">
+
+ 	<div class="columns">
+
+		 			<div class="m-post-card__image-column  column">
+
+
+				<div class="m-post-card__image" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+					<img width="1200" height="630" src="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/iStock-1184645287-1200x630.jpg" class="attachment-post-card size-post-card wp-post-image" alt="" />					
+	 				<meta itemprop="url" content="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/iStock-1184645287.jpg" />
+											<meta itemprop="width" content="1254" />
+						<meta itemprop="height" content="836" />
+									</div>
+
+ 			</div>
+ 		
+ 		<div class="m-post-card__content-column column">
+ 			<h2 class="m-post-card__title" itemprop="headline"><a href="https://stackoverflow.blog/2019/11/07/using-machine-learning-to-create-reviews-of-apis-from-stack-overflow-comments/">Looking to understand which API is best for a certain task? A new study uses Stack Overflow data to rank them</a></h2>
+
+			<div class="m-post-card__meta"><span class="posted-on-container"><span class="author vcard" itemprop="author"><a class="url fn n" href="https://stackoverflow.blog/authors/rdonovan/"></a><span class="author-name">by <a class="url fn n" href="https://stackoverflow.blog/authors/rdonovan/">Ryan Donovan</a></span></span><span class="date"> on <time class="entry-date published updated" datetime="2019-11-07T11:44:47-05:00">November 7, 2019</time></span></span></div>
+
+			<div class="m-post-card__excerpt" itemprop="articleBody">
+				But if you could collect and analyze the opinions posted within the comments and questions, you could start to get a bead on the aggregate sentiment, sort of a Yelp...
+							</div>
+
+			<div class="m-post-card__button"><a class="button -primary -blue" href="https://stackoverflow.blog/2019/11/07/using-machine-learning-to-create-reviews-of-apis-from-stack-overflow-comments/">Continue reading</a></div>
+
+			<!-- Publisher info is required. This code block doesn't output anything) -->
+			<div itemprop="publisher" itemscope="itemscope" itemtype="https://schema.org/Organization">
+				<div itemprop="logo" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+					<meta itemprop="url" content="https://placekitten.com/g/100/100" />
+					<meta itemprop="width" content="100" />
+					<meta itemprop="height" content="100" />
+				</div>
+				<meta itemprop="name" content="Client Company" />
+			</div><!--/.itemprop=publisher-->
+		</div>
+
+	</div>
+
+ </article>
+		</div>
+
+		
+		<div class="column is-three-quarters-mobile mobile-swipe">
+			
+<article id="post-13924" class="m-post-card m-post-card--portrait post-13924 post type-post status-publish format-standard has-post-thumbnail hentry category-bulletin category-code-for-a-living category-stackoverflow tag-bulletin tag-graphics tag-stackoverflow" itemscope itemtype="https://schema.org/BlogPosting">
+
+ 	<div class="columns">
+
+		 			<div class="m-post-card__image-column  column">
+
+
+				<div class="m-post-card__image" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+					<img width="1200" height="630" src="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/LetsGetGraphic-1200x630.png" class="attachment-post-card size-post-card wp-post-image" alt="" srcset="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/LetsGetGraphic-1200x630.png 1200w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/LetsGetGraphic-300x158.png 300w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/LetsGetGraphic-768x404.png 768w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/LetsGetGraphic-400x210.png 400w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/LetsGetGraphic.png 1201w " sizes="(max-width: 1200px) 100vw, 1200px" />					
+	 				<meta itemprop="url" content="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/LetsGetGraphic.png" />
+											<meta itemprop="width" content="1201" />
+						<meta itemprop="height" content="631" />
+									</div>
+
+ 			</div>
+ 		
+ 		<div class="m-post-card__content-column column">
+ 			<h2 class="m-post-card__title" itemprop="headline"><a href="https://stackoverflow.blog/2019/11/06/lets-get-graphic-a-few-ways-to-draw-on-the-web/">Let’s Get Graphic: A Few Ways To Draw On The Web</a></h2>
+
+			<div class="m-post-card__meta"><span class="posted-on-container"><span class="author vcard" itemprop="author"><a class="url fn n" href="https://stackoverflow.blog/authors/maxpekarsky/"></a><span class="author-name">by <a class="url fn n" href="https://stackoverflow.blog/authors/maxpekarsky/">Max Pekarsky</a></span></span><span class="date"> on <time class="entry-date published updated" datetime="2019-11-06T10:00:33-05:00">November 6, 2019</time></span></span></div>
+
+			<div class="m-post-card__excerpt" itemprop="articleBody">
+				In this article, we’ll go over some of the popular approaches to graphics-intensive projects on the web, compare their advantages, and look at some sample code. By the end, you’ll...
+							</div>
+
+			<div class="m-post-card__button"><a class="button -primary -blue" href="https://stackoverflow.blog/2019/11/06/lets-get-graphic-a-few-ways-to-draw-on-the-web/">Continue reading</a></div>
+
+			<!-- Publisher info is required. This code block doesn't output anything) -->
+			<div itemprop="publisher" itemscope="itemscope" itemtype="https://schema.org/Organization">
+				<div itemprop="logo" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+					<meta itemprop="url" content="https://placekitten.com/g/100/100" />
+					<meta itemprop="width" content="100" />
+					<meta itemprop="height" content="100" />
+				</div>
+				<meta itemprop="name" content="Client Company" />
+			</div><!--/.itemprop=publisher-->
+		</div>
+
+	</div>
+
+ </article>
+		</div>
+
+		
+		<div class="column is-three-quarters-mobile mobile-swipe">
+			
+<article id="post-14071" class="m-post-card m-post-card--portrait post-14071 post type-post status-publish format-standard has-post-thumbnail hentry category-bulletin category-code-for-a-living category-stackoverflow category-podcast tag-bugs tag-bulletin tag-css-grid tag-quantum-supremacy tag-stack-overflow tag-the-stack-overflow-podcast" itemscope itemtype="https://schema.org/BlogPosting">
+
+ 	<div class="columns">
+
+		 			<div class="m-post-card__image-column  column">
+
+
+				<div class="m-post-card__image" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+					<img width="1200" height="630" src="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/stack-overflow-podcast-social-3-1200x630.png" class="attachment-post-card size-post-card wp-post-image" alt="" srcset="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/stack-overflow-podcast-social-3-1200x630.png 1200w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/stack-overflow-podcast-social-3-300x158.png 300w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/stack-overflow-podcast-social-3-768x403.png 768w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/stack-overflow-podcast-social-3-400x210.png 400w " sizes="(max-width: 1200px) 100vw, 1200px" />					
+	 				<meta itemprop="url" content="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/10/stack-overflow-podcast-social-3.png" />
+											<meta itemprop="width" content="3000" />
+						<meta itemprop="height" content="1575" />
+									</div>
+
+ 			</div>
+ 		
+ 		<div class="m-post-card__content-column column">
+ 			<h2 class="m-post-card__title" itemprop="headline"><a href="https://stackoverflow.blog/2019/11/05/stack-overflow-podcast-episode-127-worst-bug-ever/">What&#8217;s the worst bug you&#8217;ve ever dealt with?</a></h2>
+
+			<div class="m-post-card__meta"><span class="posted-on-container"><span class="author vcard" itemprop="author"><a class="url fn n" href="https://stackoverflow.blog/authors/benpopper/"></a><span class="author-name">by <a class="url fn n" href="https://stackoverflow.blog/authors/benpopper/">Ben Popper</a></span></span><span class="date"> on <time class="entry-date published updated" datetime="2019-11-05T00:05:12-05:00">November 5, 2019</time></span></span></div>
+
+			<div class="m-post-card__excerpt" itemprop="articleBody">
+				We chat about quantum computing, the worst bugs we&#039;ve seen, and why CSS is such a plate of scrambled eggs.
+							</div>
+
+			<div class="m-post-card__button"><a class="button -primary -blue" href="https://stackoverflow.blog/2019/11/05/stack-overflow-podcast-episode-127-worst-bug-ever/">Continue reading</a></div>
+
+			<!-- Publisher info is required. This code block doesn't output anything) -->
+			<div itemprop="publisher" itemscope="itemscope" itemtype="https://schema.org/Organization">
+				<div itemprop="logo" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+					<meta itemprop="url" content="https://placekitten.com/g/100/100" />
+					<meta itemprop="width" content="100" />
+					<meta itemprop="height" content="100" />
+				</div>
+				<meta itemprop="name" content="Client Company" />
+			</div><!--/.itemprop=publisher-->
+		</div>
+
+	</div>
+
+ </article>
+		</div>
+
+		</div>
+				</div>
+				<!-- // 3x Pop Articles component -->
+
+				<!-- 3x Most recent Articles component -->
+				<div class="three-x-post-block">
+					
+<style>
+		.related-articles .has-post-thumbnail img.wp-post-image { display: block !important; }          
+</style>
+
+	<h2 class="section-title section-title--secondary section-title--orange-underline">Most Recent</h2>
+
+<div class="columns is-mobile mobile-swipe related-articles">
+
+	
+		<div class="column is-three-quarters-mobile mobile-swipe">
+			
+<article id="post-13910" class="m-post-card m-post-card--portrait post-13910 post type-post status-publish format-standard has-post-thumbnail hentry category-announcements category-engineering tag-announcements tag-engineering tag-integrations tag-microsoft-teams tag-stack-overflow-for-teams" itemscope itemtype="https://schema.org/BlogPosting">
+
+ 	<div class="columns">
+
+		 			<div class="m-post-card__image-column  column">
+
+
+				<div class="m-post-card__image" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+					<img width="1200" height="630" src="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/msft-launch-blog-technical-1200x630.png" class="attachment-post-card size-post-card wp-post-image" alt="" />					
+	 				<meta itemprop="url" content="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/msft-launch-blog-technical.png" />
+											<meta itemprop="width" content="1920" />
+						<meta itemprop="height" content="1080" />
+									</div>
+
+ 			</div>
+ 		
+ 		<div class="m-post-card__content-column column">
+ 			<h2 class="m-post-card__title" itemprop="headline"><a href="https://stackoverflow.blog/2019/11/04/a-technical-deep-dive-into-our-ms-teams-integration/">A Technical Deep Dive into Our MS Teams Integration</a></h2>
+
+			<div class="m-post-card__meta"><span class="posted-on-container"><span class="author vcard" itemprop="author"><a class="url fn n" href="https://stackoverflow.blog/authors/jshin/"></a><span class="author-name">by <a class="url fn n" href="https://stackoverflow.blog/authors/jshin/">Jisoo Shin</a></span></span><span class="date"> on <time class="entry-date published updated" datetime="2019-11-04T12:02:48-05:00">November 4, 2019</time></span></span></div>
+
+			<div class="m-post-card__excerpt" itemprop="articleBody">
+				How we approached and accomplished the integration between SO for Teams and MS Teams. This is a technical blog for folks who are interested in the process of how we...
+							</div>
+
+			<div class="m-post-card__button"><a class="button -primary -blue" href="https://stackoverflow.blog/2019/11/04/a-technical-deep-dive-into-our-ms-teams-integration/">Continue reading</a></div>
+
+			<!-- Publisher info is required. This code block doesn't output anything) -->
+			<div itemprop="publisher" itemscope="itemscope" itemtype="https://schema.org/Organization">
+				<div itemprop="logo" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+					<meta itemprop="url" content="https://placekitten.com/g/100/100" />
+					<meta itemprop="width" content="100" />
+					<meta itemprop="height" content="100" />
+				</div>
+				<meta itemprop="name" content="Client Company" />
+			</div><!--/.itemprop=publisher-->
+		</div>
+
+	</div>
+
+ </article>
+		</div>
+
+		
+		<div class="column is-three-quarters-mobile mobile-swipe">
+			
+<article id="post-13879" class="m-post-card m-post-card--portrait post-13879 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized tag-integrations tag-launch-announcement tag-new-features tag-stack-overflow-for-teams" itemscope itemtype="https://schema.org/BlogPosting">
+
+ 	<div class="columns">
+
+		 			<div class="m-post-card__image-column  column">
+
+
+				<div class="m-post-card__image" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+					<img width="1200" height="630" src="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/msft-launch-blog-image-1200x630.png" class="attachment-post-card size-post-card wp-post-image" alt="" />					
+	 				<meta itemprop="url" content="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/11/msft-launch-blog-image.png" />
+											<meta itemprop="width" content="1920" />
+						<meta itemprop="height" content="1080" />
+									</div>
+
+ 			</div>
+ 		
+ 		<div class="m-post-card__content-column column">
+ 			<h2 class="m-post-card__title" itemprop="headline"><a href="https://stackoverflow.blog/2019/11/04/microsoft-teams-integration-announcement/">Announcing our new integration with Microsoft Teams</a></h2>
+
+			<div class="m-post-card__meta"><span class="posted-on-container"><span class="author vcard" itemprop="author"><a class="url fn n" href="https://stackoverflow.blog/authors/lcolston/"></a><span class="author-name">by <a class="url fn n" href="https://stackoverflow.blog/authors/lcolston/">Lori Colston</a></span></span><span class="date"> on <time class="entry-date published updated" datetime="2019-11-04T12:00:17-05:00">November 4, 2019</time></span></span></div>
+
+			<div class="m-post-card__excerpt" itemprop="articleBody">
+				Collaboration and information discovery should be easy, no matter what software platform you’re using at the moment. Today we’re excited to announce a new integration that will allow you to...
+							</div>
+
+			<div class="m-post-card__button"><a class="button -primary -blue" href="https://stackoverflow.blog/2019/11/04/microsoft-teams-integration-announcement/">Continue reading</a></div>
+
+			<!-- Publisher info is required. This code block doesn't output anything) -->
+			<div itemprop="publisher" itemscope="itemscope" itemtype="https://schema.org/Organization">
+				<div itemprop="logo" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+					<meta itemprop="url" content="https://placekitten.com/g/100/100" />
+					<meta itemprop="width" content="100" />
+					<meta itemprop="height" content="100" />
+				</div>
+				<meta itemprop="name" content="Client Company" />
+			</div><!--/.itemprop=publisher-->
+		</div>
+
+	</div>
+
+ </article>
+		</div>
+
+		
+		<div class="column is-three-quarters-mobile mobile-swipe">
+			
+<article id="post-14042" class="m-post-card m-post-card--portrait post-14042 post type-post status-publish format-standard has-post-thumbnail hentry category-bulletin category-stackoverflow category-newsletter tag-bulletin tag-newsletter tag-stack-overflow tag-the-overflow" itemscope itemtype="https://schema.org/BlogPosting">
+
+ 	<div class="columns">
+
+		 			<div class="m-post-card__image-column  column">
+
+
+				<div class="m-post-card__image" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+					<img width="630" height="450" src="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/09/The-Overflow-Blog-630x450.png" class="attachment-post-card size-post-card wp-post-image" alt="" srcset="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/09/The-Overflow-Blog-630x450.png 630w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/09/The-Overflow-Blog-300x214.png 300w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/09/The-Overflow-Blog-316x225.png 316w , https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/09/The-Overflow-Blog.png 631w " sizes="(max-width: 630px) 100vw, 630px" />					
+	 				<meta itemprop="url" content="https://149351115.v2.pressablecdn.com/wp-content/uploads/2019/09/The-Overflow-Blog.png" />
+											<meta itemprop="width" content="631" />
+						<meta itemprop="height" content="450" />
+									</div>
+
+ 			</div>
+ 		
+ 		<div class="m-post-card__content-column column">
+ 			<h2 class="m-post-card__title" itemprop="headline"><a href="https://stackoverflow.blog/2019/11/01/the-overflow-newsletter-3-the-75-lines-of-code-that-changed-history/">The Overflow Newsletter #3 &#8211; The 36 pieces of code that changed history</a></h2>
+
+			<div class="m-post-card__meta"><span class="posted-on-container"><span class="author vcard" itemprop="author"><a class="url fn n" href="https://stackoverflow.blog/authors/rdonovan/"></a><span class="author-name">by <a class="url fn n" href="https://stackoverflow.blog/authors/rdonovan/">Ryan Donovan</a></span></span><span class="date"> on <time class="entry-date published updated" datetime="2019-11-01T10:20:46-04:00">November 1, 2019</time></span></span></div>
+
+			<div class="m-post-card__excerpt" itemprop="articleBody">
+				We chat about programming with ADHD, our most embarrassing programming mistakes, and spacecraft navigation.
+							</div>
+
+			<div class="m-post-card__button"><a class="button -primary -blue" href="https://stackoverflow.blog/2019/11/01/the-overflow-newsletter-3-the-75-lines-of-code-that-changed-history/">Continue reading</a></div>
+
+			<!-- Publisher info is required. This code block doesn't output anything) -->
+			<div itemprop="publisher" itemscope="itemscope" itemtype="https://schema.org/Organization">
+				<div itemprop="logo" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+					<meta itemprop="url" content="https://placekitten.com/g/100/100" />
+					<meta itemprop="width" content="100" />
+					<meta itemprop="height" content="100" />
+				</div>
+				<meta itemprop="name" content="Client Company" />
+			</div><!--/.itemprop=publisher-->
+		</div>
+
+	</div>
+
+ </article>
+		</div>
+
+		</div>
+				</div>
+				<!-- // 3x Most recent Articles component -->
+			</div> <!-- content-river column -->
+
+	</main>
+
+</div>
+
+
+
+</div><!-- #content -->
+
+<div class="footer-ctas-wrapper">
+	<div class="wrapper">
+		<div class="columns is-gapless footer-column-wrapper">
+			<div class="column footer-left-cta">
+				<div class="m-footer-cta">
+	<h2 class="m-footer-cta__title">Developer Jobs</h2>
+	<div class="m-footer-cta__description">
+		Build your career with Stack Overflow, where developers come first.		</div>
+	<a href="http://stackoverflow.com/jobs?utm_source=so-owned&#038;utm_medium=blog&#038;utm_campaign=gen-blog&#038;utm_content=sidebar-btm-overview" class="m-footer-cta__button button -secondary -padded -white -outline">See all job openings now!</a>
+
+</div>
+			</div>
+
+			<div class="column footer-right-cta">
+				<div class="m-footer-cta">
+	<h2 class="m-footer-cta__title">Stack Overflow for Teams</h2>
+	<div class="m-footer-cta__description">
+		Discover and share internal knowledge in a private and secure environment.		</div>
+	<a href="https://www.stackoverflow.com/teams?utm_source=so-owned&#038;utm_medium=website&#038;utm_campaign=blog-footer" class="m-footer-cta__button button -secondary -padded -white -outline">Learn More</a>
+
+</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<script>
+		if (undefined === window.$ && undefined !== window.jQuery) {
+			window.$ = window.jQuery;
+		}
+	</script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.sstatic.net/shared/chrome/chrome-footer.css?v=3e5662f666bb" >
+    <footer id="footer" class="site-footer js-footer" role="contentinfo">
+        <div class="site-footer--container">
+                <div class="site-footer--logo">
+
+                    
+                    <a href="https://stackoverflow.com"><svg aria-hidden="true" class="svg-icon native iconLogoGlyphMd" width="32" height="37" viewBox="0 0 32 37"><path d="M26 33v-9h4v13H0V24h4v9h22z" fill="#BCBBBB"/><path d="M21.5 0l-2.7 2 9.9 13.3 2.7-2L21.5 0zM26 18.4L13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5zM9.1 15.2l15 7 1.4-3-15-7-1.4 3zm14 10.79l.68-2.95-16.1-3.35L7 23l16.1 2.99zM23 30H7v-3h16v3z" fill="#F48024"/></svg></a>
+                </div>
+            
+            <nav class="site-footer--nav">
+                    <div class="site-footer--col site-footer--col__visible js-footer-col" data-name="default">
+                        <h5 class="-title"><a href="https://stackoverflow.com" class="js-gps-track" data-gps-track="footer.click({ location: 0, link: 15})">Stack Overflow</a></h5>
+                        <ul class="-list js-primary-footer-links">
+                            <li class="-item"><a href="https://stackoverflow.com/questions" class="js-gps-track -link" data-gps-track="footer.click({ location: 0, link: 16})">Questions</a></li>
+                                <li class="-item"><a href="https://stackoverflow.com/jobs" class="js-gps-track -link" data-gps-track="footer.click({ location: 0, link: 17})">Jobs</a></li>
+                                <li class="-item"><a href="https://stackoverflow.com/jobs/directory/developer-jobs" class="js-gps-track -link" data-gps-track="footer.click({ location: 0, link: 11})">Developer Jobs Directory</a></li>
+                                     <li class="-item"><a href="https://stackoverflow.com/jobs/salary" class="js-gps-track -link" data-gps-track="footer.click({ location: 0, link: 28})">Salary Calculator</a></li>
+                                                    </ul>
+                    </div>
+                    <div class="site-footer--col site-footer--col__visible js-footer-col" data-name="default">
+                        <h5 class="-title"><a href="https://www.stackoverflowbusiness.com" class="js-gps-track" data-gps-track="footer.click({ location: 0, link: 19 })">Products</a></h5>
+                        <ul class="-list">
+                            <li class="-item"><a href="https://stackoverflow.com/teams" class="js-gps-track -link" 
+                                                 data-ga="[&quot;teams traffic&quot;,&quot;footer - site nav&quot;,&quot;stackoverflow.com/teams&quot;,null,{&quot;dimension4&quot;:&quot;teams&quot;}]"
+                                                 data-gps-track="footer.click({ location: 0, link: 29 })">Teams</a></li>
+                            <li class="-item"><a href="https://www.stackoverflowbusiness.com/talent" class="js-gps-track -link" data-gps-track="footer.click({ location: 0, link: 20 })">Talent</a></li>
+                            <li class="-item"><a href="https://www.stackoverflowbusiness.com/advertising" class="js-gps-track -link" data-gps-track="footer.click({ location: 0, link: 21 })">Advertising</a></li>
+                            <li class="-item"><a href="https://stackoverflow.com/enterprise" class="js-gps-track -link" data-gps-track="footer.click({ location: 0, link: 22 })">Enterprise</a></li>
+                        </ul>
+                    </div>
+                <div class="site-footer--col site-footer--col__visible js-footer-col" data-name="default">
+                    <h5 class="-title"><a class="js-gps-track" data-gps-track="footer.click({ location: 0, link: 1 })" href="https://stackoverflow.com/company/about">Company</a></h5>
+                    <ul class="-list">
+                            <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 0, link: 1 })" href="https://stackoverflow.com/company/about">About</a></li>
+                                                <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 0, link: 27 })" href="https://stackoverflow.com/company/press">Press</a></li>
+                            <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 0, link: 9 })" href="https://stackoverflow.com/company/work-here">Work Here</a></li>
+                        <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 0, link: 7 })" href="https://stackoverflow.com/legal">Legal</a></li>
+                        <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 0, link: 8 })" href="https://stackoverflow.com/legal/privacy-policy">Privacy Policy</a></li>
+                            <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 0, link: 13 })" href="https://stackoverflow.com/company/contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer--col site-footer--categories-nav site-footer--col__visible">
+                    <a href="#" class="site-footer--back js-footer-back"><svg aria-hidden="true" class="svg-icon iconArrowLeftAlt" width="18" height="18" viewBox="0 0 18 18"><path d="M10.58 16L12 14.59 6.4 9 12 3.41 10.57 2l-7 7 7 7z"/></svg></a>
+                    <div>
+                        <h5 class="-title"><a href="https://stackexchange.com" data-gps-track="footer.click({ location: 0, link: 30 })">Stack Exchange<br> Network</a></h5>
+                        <ul class="-list">
+                            <li class="-item"><a href="#" class="-link _expandable js-footer-category-trigger js-gps-track" data-gps-track="footer.click({ location: 0, link: 24 })" data-target="Technology">Technology</a></li>
+                            <li class="-item"><a href="#" class="-link _expandable js-footer-category-trigger js-gps-track" data-gps-track="footer.click({ location: 0, link: 24 })" data-target="Life / Arts">Life / Arts</a></li>
+                            <li class="-item"><a href="#" class="-link _expandable js-footer-category-trigger js-gps-track" data-gps-track="footer.click({ location: 0, link: 24 })" data-target="Culture / Recreation">Culture / Recreation</a></li>
+                            <li class="-item"><a href="#" class="-link _expandable js-footer-category-trigger js-gps-track" data-gps-track="footer.click({ location: 0, link: 24 })" data-target="Science">Science</a></li>
+                            <li class="-item"><a href="#" class="-link _expandable js-footer-category-trigger js-gps-track" data-gps-track="footer.click({ location: 0, link: 24 })" data-target="Other">Other</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="site-footer--categories">
+                    <div class="site-footer--col site-footer--category js-footer-col" data-name="Technology">
+        <ul class="-list">
+                <li class="-item"><a href="https://stackoverflow.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="professional and enthusiast programmers">Stack Overflow</a></li>
+                <li class="-item"><a href="https://serverfault.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="system and network administrators">Server Fault</a></li>
+                <li class="-item"><a href="https://superuser.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="computer enthusiasts and power users">Super User</a></li>
+                <li class="-item"><a href="https://webapps.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="power users of web applications">Web Applications</a></li>
+                <li class="-item"><a href="https://askubuntu.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="Ubuntu users and developers">Ask Ubuntu</a></li>
+                <li class="-item"><a href="https://webmasters.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="pro webmasters">Webmasters</a></li>
+                <li class="-item"><a href="https://gamedev.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="professional and independent game developers">Game Development</a></li>
+                    </ul></div><div class="site-footer--col site-footer--category js-footer-col" data-name="Technology"><ul class="-list">
+                <li class="-item"><a href="https://tex.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="users of TeX, LaTeX, ConTeXt, and related typesetting systems">TeX - LaTeX</a></li>
+                <li class="-item"><a href="https://softwareengineering.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="professionals, academics, and students working within the systems development life cycle">Software Engineering</a></li>
+                <li class="-item"><a href="https://unix.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="users of Linux, FreeBSD and other Un*x-like operating systems">Unix &amp; Linux</a></li>
+                <li class="-item"><a href="https://apple.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="power users of Apple hardware and software">Ask Different (Apple)</a></li>
+                <li class="-item"><a href="https://wordpress.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="WordPress developers and administrators">WordPress Development</a></li>
+                <li class="-item"><a href="https://gis.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="cartographers, geographers and GIS professionals">Geographic Information Systems</a></li>
+                <li class="-item"><a href="https://electronics.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="electronics and electrical engineering professionals, students, and enthusiasts">Electrical Engineering</a></li>
+                    </ul></div><div class="site-footer--col site-footer--category js-footer-col" data-name="Technology"><ul class="-list">
+                <li class="-item"><a href="https://android.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="enthusiasts and power users of the Android operating system">Android Enthusiasts</a></li>
+                <li class="-item"><a href="https://security.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="information security professionals">Information Security</a></li>
+                <li class="-item"><a href="https://dba.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="database professionals who wish to improve their database skills and learn from others in the community">Database Administrators</a></li>
+                <li class="-item"><a href="https://drupal.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="Drupal developers and administrators">Drupal Answers</a></li>
+                <li class="-item"><a href="https://sharepoint.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="SharePoint enthusiasts">SharePoint</a></li>
+                <li class="-item"><a href="https://ux.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="user experience researchers and experts">User Experience</a></li>
+                <li class="-item"><a href="https://mathematica.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="users of Wolfram Mathematica">Mathematica</a></li>
+                    </ul></div><div class="site-footer--col site-footer--category js-footer-col" data-name="Technology"><ul class="-list">
+                <li class="-item"><a href="https://salesforce.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="Salesforce administrators, implementation experts, developers and anybody in-between">Salesforce</a></li>
+                <li class="-item"><a href="https://expressionengine.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="administrators, end users, developers and designers for ExpressionEngine&#174; CMS">ExpressionEngine&#174; Answers</a></li>
+                <li class="-item"><a href="https://pt.stackoverflow.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="programadores profissionais e entusiastas">Stack Overflow em Portugu&#234;s</a></li>
+                <li class="-item"><a href="https://blender.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="people who use Blender to create 3D graphics, animations, or games">Blender</a></li>
+                <li class="-item"><a href="https://networkengineering.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="network engineers">Network Engineering</a></li>
+                <li class="-item"><a href="https://crypto.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="software developers, mathematicians and others interested in cryptography">Cryptography</a></li>
+                <li class="-item"><a href="https://codereview.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="peer programmer code reviews">Code Review</a></li>
+                    </ul></div><div class="site-footer--col site-footer--category js-footer-col" data-name="Technology"><ul class="-list">
+                <li class="-item"><a href="https://magento.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="users of the Magento e-Commerce platform">Magento</a></li>
+                <li class="-item"><a href="https://softwarerecs.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="people seeking specific software recommendations">Software Recommendations</a></li>
+                <li class="-item"><a href="https://dsp.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="practitioners of the art and science of signal, image and video processing">Signal Processing</a></li>
+                <li class="-item"><a href="https://emacs.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="those using, extending or developing Emacs">Emacs</a></li>
+                <li class="-item"><a href="https://raspberrypi.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="users and developers of hardware and software for Raspberry Pi">Raspberry Pi</a></li>
+                <li class="-item"><a href="https://ru.stackoverflow.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="программистов">Stack Overflow на русском</a></li>
+                <li class="-item"><a href="https://codegolf.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="programming puzzle enthusiasts and code golfers">Code Golf</a></li>
+                    </ul></div><div class="site-footer--col site-footer--category js-footer-col" data-name="Technology"><ul class="-list">
+                <li class="-item"><a href="https://es.stackoverflow.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="programadores y profesionales de la inform&#225;tica">Stack Overflow en espa&#241;ol</a></li>
+                <li class="-item"><a href="https://ethereum.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="users of Ethereum, the decentralized application platform and smart contract enabled blockchain">Ethereum</a></li>
+                <li class="-item"><a href="https://datascience.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="Data science professionals, Machine Learning specialists, and those interested in learning more about the field">Data Science</a></li>
+                <li class="-item"><a href="https://arduino.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="developers of open-source hardware and software that is compatible with Arduino">Arduino</a></li>
+                <li class="-item"><a href="https://bitcoin.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="Bitcoin crypto-currency enthusiasts">Bitcoin</a></li>
+                <li class="-item"><a href="https://sqa.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="software quality control experts, automation engineers, and software testers">Software Quality Assurance &amp; Testing</a></li>
+                <li class="-item"><a href="https://sound.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="sound engineers, producers, editors, and enthusiasts">Sound Design</a></li>
+                    </ul></div><div class="site-footer--col site-footer--category js-footer-col" data-name="Technology"><ul class="-list">
+                <li class="-item"><a href="https://windowsphone.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="enthusiasts and power users of Windows Phone OS">Windows Phone</a></li>
+                            <li class="-item">
+                    <a href="https://stackexchange.com/sites#technology" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 26 })">
+                        <strong>
+                            more (27)
+                        </strong>
+                    </a>
+                </li>
+        </ul>
+    </div>
+    <div class="site-footer--col site-footer--category js-footer-col" data-name="Life / Arts">
+        <ul class="-list">
+                <li class="-item"><a href="https://photo.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="professional, enthusiast and amateur photographers">Photography</a></li>
+                <li class="-item"><a href="https://scifi.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="science fiction and fantasy enthusiasts">Science Fiction &amp; Fantasy</a></li>
+                <li class="-item"><a href="https://graphicdesign.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="Graphic Design professionals, students, and enthusiasts">Graphic Design</a></li>
+                <li class="-item"><a href="https://movies.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="movie and tv enthusiasts">Movies &amp; TV</a></li>
+                <li class="-item"><a href="https://music.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="musicians, students, and enthusiasts">Music: Practice &amp; Theory</a></li>
+                <li class="-item"><a href="https://worldbuilding.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="writers/artists using science, geography and culture to construct imaginary worlds and settings">Worldbuilding</a></li>
+                <li class="-item"><a href="https://video.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="engineers, producers, editors, and enthusiasts spanning the fields of video, and media creation">Video Production</a></li>
+                    </ul></div><div class="site-footer--col site-footer--category js-footer-col" data-name="Life / Arts"><ul class="-list">
+                <li class="-item"><a href="https://cooking.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="professional and amateur chefs">Seasoned Advice (cooking)</a></li>
+                <li class="-item"><a href="https://diy.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="contractors and serious DIYers">Home Improvement</a></li>
+                <li class="-item"><a href="https://money.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="people who want to be financially literate">Personal Finance &amp; Money</a></li>
+                <li class="-item"><a href="https://academia.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="academics and those enrolled in higher education">Academia</a></li>
+                <li class="-item"><a href="https://law.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="legal professionals, students, and others with experience or interest in law">Law</a></li>
+                <li class="-item"><a href="https://fitness.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="physical fitness professionals, athletes, trainers, and those providing health-related needs">Physical Fitness</a></li>
+                <li class="-item"><a href="https://gardening.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="gardeners and landscapers">Gardening &amp; Landscaping</a></li>
+                    </ul></div><div class="site-footer--col site-footer--category js-footer-col" data-name="Life / Arts"><ul class="-list">
+                <li class="-item"><a href="https://parenting.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="parents, grandparents, nannies and others with a parenting role">Parenting</a></li>
+                            <li class="-item">
+                    <a href="https://stackexchange.com/sites#lifearts" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 26 })">
+                        <strong>
+                            more (11)
+                        </strong>
+                    </a>
+                </li>
+        </ul>
+    </div>
+    <div class="site-footer--col site-footer--category js-footer-col" data-name="Culture / Recreation">
+        <ul class="-list">
+                <li class="-item"><a href="https://english.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="linguists, etymologists, and serious English language enthusiasts">English Language &amp; Usage</a></li>
+                <li class="-item"><a href="https://skeptics.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="scientific skepticism">Skeptics</a></li>
+                <li class="-item"><a href="https://judaism.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="those who base their lives on Jewish law and tradition and anyone interested in learning more">Mi Yodeya (Judaism)</a></li>
+                <li class="-item"><a href="https://travel.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="road warriors and seasoned travelers">Travel</a></li>
+                <li class="-item"><a href="https://christianity.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="committed Christians, experts in Christianity and those interested in learning more">Christianity</a></li>
+                <li class="-item"><a href="https://ell.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="speakers of other languages learning English">English Language Learners</a></li>
+                <li class="-item"><a href="https://japanese.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="students, teachers, and linguists wanting to discuss the finer points of the Japanese language">Japanese Language</a></li>
+                    </ul></div><div class="site-footer--col site-footer--category js-footer-col" data-name="Culture / Recreation"><ul class="-list">
+                <li class="-item"><a href="https://chinese.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="students, teachers, and linguists wanting to discuss the finer points of the Chinese language">Chinese Language</a></li>
+                <li class="-item"><a href="https://french.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="students, teachers, and linguists wanting to discuss the finer points of the French language">French Language</a></li>
+                <li class="-item"><a href="https://german.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="speakers of German wanting to discuss the finer points of the language and translation">German Language</a></li>
+                <li class="-item"><a href="https://hermeneutics.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="professors, theologians, and those interested in exegetical analysis of biblical texts">Biblical Hermeneutics</a></li>
+                <li class="-item"><a href="https://history.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="historians and history buffs">History</a></li>
+                <li class="-item"><a href="https://spanish.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="linguists, teachers, students and Spanish language enthusiasts in general wanting to discuss the finer points of the language">Spanish Language</a></li>
+                <li class="-item"><a href="https://islam.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="Muslims, experts in Islam, and those interested in learning more about Islam">Islam</a></li>
+                    </ul></div><div class="site-footer--col site-footer--category js-footer-col" data-name="Culture / Recreation"><ul class="-list">
+                <li class="-item"><a href="https://rus.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="лингвистов и энтузиастов русского языка">Русский язык</a></li>
+                <li class="-item"><a href="https://russian.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="students, teachers, and linguists wanting to discuss the finer points of the Russian language">Russian Language</a></li>
+                <li class="-item"><a href="https://gaming.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="passionate videogamers on all platforms">Arqade (gaming)</a></li>
+                <li class="-item"><a href="https://bicycles.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="people who build and repair bicycles, people who train cycling, or commute on bicycles">Bicycles</a></li>
+                <li class="-item"><a href="https://rpg.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="gamemasters and players of tabletop, paper-and-pencil role-playing games">Role-playing Games</a></li>
+                <li class="-item"><a href="https://anime.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="anime and manga fans">Anime &amp; Manga</a></li>
+                <li class="-item"><a href="https://puzzling.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="those who create, solve, and study puzzles">Puzzling</a></li>
+                    </ul></div><div class="site-footer--col site-footer--category js-footer-col" data-name="Culture / Recreation"><ul class="-list">
+                <li class="-item"><a href="https://mechanics.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="mechanics and DIY enthusiast owners of cars, trucks, and motorcycles">Motor Vehicle Maintenance &amp; Repair</a></li>
+                <li class="-item"><a href="https://boardgames.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="people who like playing board games, designing board games or modifying the rules of existing board games">Board &amp; Card Games</a></li>
+                <li class="-item"><a href="https://bricks.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="LEGO&#174; and building block enthusiasts">Bricks</a></li>
+                <li class="-item"><a href="https://homebrew.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="dedicated home brewers and serious enthusiasts">Homebrewing</a></li>
+                <li class="-item"><a href="https://martialarts.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="students and teachers of all martial arts">Martial Arts</a></li>
+                <li class="-item"><a href="https://outdoors.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="people who love being outdoors enjoying nature and wilderness, and learning about the required skills and equipment">The Great Outdoors</a></li>
+                <li class="-item"><a href="https://poker.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="serious players and enthusiasts of poker">Poker</a></li>
+                    </ul></div><div class="site-footer--col site-footer--category js-footer-col" data-name="Culture / Recreation"><ul class="-list">
+                <li class="-item"><a href="https://chess.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="serious players and enthusiasts of chess">Chess</a></li>
+                <li class="-item"><a href="https://sports.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="participants in team and individual sport activities">Sports</a></li>
+                            <li class="-item">
+                    <a href="https://stackexchange.com/sites#culturerecreation" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 26 })">
+                        <strong>
+                            more (16)
+                        </strong>
+                    </a>
+                </li>
+        </ul>
+    </div>
+    <div class="site-footer--col site-footer--category js-footer-col" data-name="Science">
+        <ul class="-list">
+                <li class="-item"><a href="https://mathoverflow.net" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="professional mathematicians">MathOverflow</a></li>
+                <li class="-item"><a href="https://math.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="people studying math at any level and professionals in related fields">Mathematics</a></li>
+                <li class="-item"><a href="https://stats.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="people interested in statistics, machine learning, data analysis, data mining, and data visualization">Cross Validated (stats)</a></li>
+                <li class="-item"><a href="https://cstheory.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="theoretical computer scientists and researchers in related fields">Theoretical Computer Science</a></li>
+                <li class="-item"><a href="https://physics.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="active researchers, academics and students of physics">Physics</a></li>
+                <li class="-item"><a href="https://chemistry.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="scientists, academics, teachers, and students in the field of chemistry">Chemistry</a></li>
+                <li class="-item"><a href="https://biology.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="biology researchers, academics, and students">Biology</a></li>
+                    </ul></div><div class="site-footer--col site-footer--category js-footer-col" data-name="Science"><ul class="-list">
+                <li class="-item"><a href="https://cs.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="students, researchers and practitioners of computer science">Computer Science</a></li>
+                <li class="-item"><a href="https://philosophy.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="those interested in the study of the fundamental nature of knowledge, reality, and existence">Philosophy</a></li>
+                <li class="-item"><a href="https://linguistics.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="professional linguists and others with an interest in linguistic research and theory">Linguistics</a></li>
+                <li class="-item"><a href="https://psychology.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="practitioners, researchers, and students in cognitive science, psychology, neuroscience, and psychiatry">Psychology &amp; Neuroscience</a></li>
+                <li class="-item"><a href="https://scicomp.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="scientists using computers to solve scientific problems">Computational Science</a></li>
+                            <li class="-item">
+                    <a href="https://stackexchange.com/sites#science" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 26 })">
+                        <strong>
+                            more (8)
+                        </strong>
+                    </a>
+                </li>
+        </ul>
+    </div>
+    <div class="site-footer--col site-footer--category js-footer-col" data-name="Other">
+        <ul class="-list">
+                <li class="-item"><a href="https://meta.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="meta-discussion of the Stack Exchange family of Q&amp;A websites">Meta Stack Exchange</a></li>
+                <li class="-item"><a href="https://stackapps.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="apps, scripts, and development with the Stack Exchange API">Stack Apps</a></li>
+                <li class="-item"><a href="https://api.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="programmatic interaction with Stack Exchange sites">API</a></li>
+                <li class="-item"><a href="https://data.stackexchange.com" class="-link js-gps-track" data-gps-track="footer.click({ location: 2, link: 25 })" title="querying Stack Exchange data using SQL">Data</a></li>
+                    </ul>
+    </div>
+                </div>
+            </nav>
+            <div class="site-footer--copyright fs-fine">
+                <ul class="-list">
+                    <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 0, link:4 })" href="https://stackoverflow.blog?blb=1">Blog</a></li>
+                    <li class="-item"><a href="https://www.facebook.com/officialstackoverflow/" class="-link js-gps-track" data-gps-track="footer.click({ location: 0, link: 31 })">Facebook</a></li>
+                    <li class="-item"><a href="https://twitter.com/stackoverflow" class="-link js-gps-track" data-gps-track="footer.click({ location: 0, link: 32 })">Twitter</a></li>
+                    <li class="-item"><a href="https://linkedin.com/company/stack-overflow" class="-link js-gps-track" data-gps-track="footer.click({ location: 0, link: 33 })">LinkedIn</a></li>
+                </ul>
+
+                <p class="mt-auto mb24">
+site design / logo &#169; 2019 Stack Exchange Inc; user contributions licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="js-gps-track" data-gps-track="footer.click({ location: 0, link: 34 })" rel="license">cc by-sa 4.0</a>
+                            with <a href="https://stackoverflow.blog/2009/06/25/attribution-required/"  class="js-gps-track" data-gps-track="footer.click({ location: 0, link:35 })" rel="license">attribution required</a>.
+                    <span id="svnrev">rev&nbsp;2019.11.27.35508</span>
+                </p>
+            </div>
+        </div>
+
+            </footer>
+        <script>
+            var $trigger = $('.js-footer-category-trigger'), $footer = $('.js-footer'), $back = $('.js-footer-back'), $cols = $('.js-footer-col');
+
+            function setCategory(target) {
+                var $picked = $cols.filter('[data-name="' + target + '"]');
+                $cols.removeClass('site-footer--col__visible');
+                $picked.addClass('site-footer--col__visible');
+            }
+
+            $trigger.on('click', function (e) {
+                e.preventDefault();
+
+                var target = $(this).data('target');
+
+                $trigger.removeClass('_active');
+                $(this).addClass('_active');
+
+                $footer.addClass('site-footer__open');
+                setCategory(target);
+            });
+
+            $back.on('click', function (e) {
+                e.preventDefault();
+
+                $trigger.removeClass('_active');
+                $footer.removeClass('site-footer__open');
+
+                setCategory('default');
+            });
+        </script>
+
+	<!-- Google Analytics -->
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-108242619-10', 'auto');
+				ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
+	<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/450622.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+<script>
+(function(d,b,a,s,e){ var t = b.createElement(a),
+  fs = b.getElementsByTagName(a)[0]; t.async=1; t.id=e; t.src=s;
+  fs.parentNode.insertBefore(t, fs); })
+(window,document,'script','https://tag.demandbase.com/eee176b9.min.js','demandbase_js_lib');  
+</script>        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4ececeb97191880b"></script><script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201948'></script>
+<script type='text/javascript' src='https://149351115.v2.pressablecdn.com/wp-content/themes/stackoverflow-oct-19/assets/js/stackoverflow-vendor.min.js?ver=20171013'></script>
+<script type='text/javascript' src='https://149351115.v2.pressablecdn.com/wp-content/themes/stackoverflow-oct-19/assets/js/stackoverflow.min.js?ver=20171013'></script>
+<script type='text/javascript' src='https://149351115.v2.pressablecdn.com/wp-includes/js/wp-embed.min.js?ver=5.3'></script>
+	  <script type="text/javascript">
+		(function() {
+		  var t   = document.createElement( 'script' );
+		  t.type  = 'text/javascript';
+		  t.async = true;
+		  t.id    = 'gauges-tracker';
+		  t.setAttribute( 'data-site-id', '58a295c34b2ffa62041185f8' );
+		  t.src = '//secure.gaug.es/track.js';
+		  var s = document.getElementsByTagName( 'script' )[0];
+		  s.parentNode.insertBefore( t, s );
+		})();
+	  </script>
+	  <script type='text/javascript' src='https://stats.wp.com/e-201948.js' async='async' defer='defer'></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:7.9.1',blog:'162153688',post:'0',tz:'-5',srv:'stackoverflow.blog'} ]);
+	_stq.push([ 'clickTrackerInit', '162153688', '0' ]);
+</script>
+
+</body>
+</html>
+<!--
+	generated 145 seconds ago
+	generated in 0.170 seconds
+	served from batcache in 0.002 seconds
+	expires in 155 seconds
+-->
